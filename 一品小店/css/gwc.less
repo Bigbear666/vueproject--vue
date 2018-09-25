@@ -1,0 +1,464 @@
+@m: 0;
+@p: 0;
+@w: 100%;
+@sta: static;
+@ofx: hidden;
+@fs12: 12px;
+@fm: 微软雅黑;
+@bg: #ffffff;
+@mg: auto;
+@w1200: 1200px;
+@12mg: 30px auto;
+@h: 34px;
+@td: none;
+@aw: 140px;
+@ah: 34px;
+@afs: 32px;
+@afw: bold;
+@acol: #ff5600;
+@afl: left;
+@w30: 30%;
+@h30: 30px;
+@bd: 2px solid #e4393c;
+@ml: 350px;
+@bginp: #e4393c;
+@fs20: 20px;
+@va: middle;
+@cs: pointer;
+@bg4f: #4f4f4f;
+@mt: 24px;
+@bg68: #ff680b;
+@ta: center;
+@fl: left;
+@col: #ff7f00;
+@dis: block;
+@bgaa: #ff5600;
+@f5: #f5f5f5;
+@lh: 50px;
+@bg333: #333;
+@bd1: 1px;
+@bd2: solid;
+@bd3: #e4e4e4;
+@fr: right;
+@rtw: 749px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: @td;
+}
+
+body {
+    width: @w;
+    position: @sta;
+    overflow-x: @ofx;
+    font-size: @fs12;
+    font-family: @fm;
+    background: @bg;
+}
+
+#app {
+    width: @w;
+    margin: @mg;
+}
+
+#app .X-header {
+    width: @w1200;
+    margin: @12mg;
+    height: @h;
+    line-height: @h;
+}
+
+#app .X-header a {
+    text-decoration: @td;
+    width: @aw;
+    height: @ah;
+    font-size: @afs;
+    font-weight: @afw;
+    color: @acol;
+    float: @afl;
+}
+
+#app .X-header input {
+    outline: @td;
+    vertical-align: @va;
+}
+
+#app .X-header input.first {
+    float: @afl;
+    width: @w30;
+    height: @h30 + 3;
+    border: @bd;
+    margin-left: @ml;
+}
+
+#app .X-header input.sec {
+    width: @w30 / 3%;
+    height: @h30 + 7;
+    background: @bginp;
+    font-size: @fs20;
+    color: @bg;
+    border: @td;
+    cursor: @cs;
+}
+
+#app .X-nav {
+    width: @w;
+    height: @h + 6px;
+    background: @bg4f;
+    margin-top: @mt;
+}
+
+#app .X-nav .nav_2 {
+    width: @w1200;
+    margin: @mg;
+}
+
+#app .X-nav .nav_2 .assort {
+    width: @aw + @w30 * 2;
+    height: @w30 + 10px;
+    background: @bg68;
+    float: @fl;
+}
+
+#app .X-nav .nav_2 .assort h1 {
+    color: @bg;
+    font-size: @fs20 - 2;
+    line-height: @fs20 * 2;
+    text-align: @ta;
+}
+
+#app .X-nav .nav_2 .nav_1 {
+    width: @w1200 - 400px;
+    height: @h30 + 10px;
+    float: @fl;
+}
+
+#app .X-nav .nav_2 .nav_1 ul {
+    list-style: @td;
+}
+
+#app .X-nav .nav_2 .nav_1 ul li {
+    float: @fl;
+    width: @w1200 / 12;
+    height: @h30 + 10px;
+    line-height: @h30 + 10px;
+    text-align: @ta;
+    margin-right: @h30 / 8;
+    font-size: @fs20 - 4 * 2;
+}
+
+#app .X-nav .nav_2 .nav_1 ul li a {
+    text-decoration: @td;
+    display: @dis;
+    color: @bg;
+}
+
+#app .X-nav .nav_2 .nav_1 ul li:nth-child(1) a {
+    background: @bg;
+    color: @bgaa;
+}
+
+#app .X-nav .nav_2 .nav_1 ul li:hover a {
+    display: block;
+    background: @bg;
+    color: @bgaa;
+}
+
+// main
+.main_banner {
+    width: @w1200;
+    height: @ml + 40;
+    margin: @mg;
+}
+
+.fl {
+    float: @fl;
+}
+
+.banner_left {
+    width: @w1200 / 6;
+    height: @ml + 40;
+    background: @f5;
+}
+
+.banner_left ul li {
+    height: @lh;
+    line-height: @lh;
+    margin-left: @lh;
+    font-size: @fs12 + 3;
+}
+
+.banner_left ul li a {
+    color: @bg333;
+    text-decoration: @td;
+    background: @td;
+}
+
+.banner_left ul li:hover a {
+    color: @bgaa;
+}
+
+.banner_right {
+    width: @w - 20%;
+    height: @ml + @w30;
+    margin-left: @fs20 / 2;
+    margin-top: @fs20 / 2;
+}
+
+.banner_right img {
+    width: @w;
+    height: @w;
+}
+
+img {
+    border: @m;
+}
+
+// main
+#gwc {
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.gwc {
+    width: 114px;
+    height: 80px;
+    border-bottom: 2px solid #FE943C;
+}
+
+.gwc h1 {
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+
+// input
+#r-name {
+    width: 1200px;
+    height: 320px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.shoppingTrolley_header {
+    width: 730px;
+    height: 40px;
+    background: #FE943C;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #FE943C;
+}
+
+.shoppingTrolley_name {
+    width: 750px;
+}
+
+.shoppingTrolley_name {
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.shoppingTrolley_thePrice {
+    width: 115px;
+    font-size: 18px;
+}
+
+.shoppingTrolley_form {
+    width: 720px;
+    height: 62px;
+    border: 1px solid #FE943C;
+    border-bottom: 1px solid dashed;
+    line-height: 62px;
+    font-size: 18px;
+    color: #7D7C7C;
+}
+
+.shoppingTrolley_form td input {
+    margin-left: 20px;
+}
+
+input {
+    outline: none;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+.shoppingTrolley_form a {
+    text-decoration: underline;
+}
+
+.shoppingTrolley_a {
+    color: #7D7C7C;
+    font-size: 18px;
+}
+
+label input {
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+label span {
+    line-height: 50px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #7D7C7C;
+}
+
+.shoppingTrolley_amount {
+    width: 270px;
+    height: 110px;
+    margin-top: 30px;
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+    font-size: 18px;
+    color: #7D7C7C;
+    text-align: right;
+}
+
+.shoppingTrolley_amount .shoppingTrolley_zong {
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.shoppingTrolley_kuan {
+    width: 220px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.shoppingTrolley_fu, .shoppingTrolley_qian {
+    font-size: 22px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.r-jxgou {
+    text-decoration: underline;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 20px;
+    color: #7D7C7C;
+    font-size: 18px;
+}
+
+#suan {
+    width: 120px;
+    height: 32px;
+    border: 1px solid #666666;
+    font-size: 20px;
+    color: #666666;
+    background: #F7F7F5;
+}
+
+// footer
+#r-footer {
+    width: 100%;
+    height: 144px;
+    background: #F5F5F5;
+}
+
+.r-foot {
+    width: 1200px;
+    height: 144px;
+    margin: auto;
+}
+
+.r-foot ul {
+    width: 235px;
+    height: 129px;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+}
+
+@col666: #666666;
+#r-footer .r-foot ul li {
+    width: @w100 * 2 + @fs20 + @f5 * 3;
+    margin-top: 12px;
+    height: 15px;
+    line-height: 0;
+    color: @col666;
+    font-size: @fs12;
+}
+
+#r-footer .r-foot ul li:nth-child(1) {
+    font-size: @fs12 + 3;
+}
+
+.r-foot-list a {
+    font-size: @fs12 + 3;
+}
+
+@col333: #333;
+#r-footer .r-foot ul li a {
+    color: @col333;
+    text-decoration: @td;
+}
+
+#r-footer .r-foot ul li a:hover {
+    color: @col;
+    text-decoration: @td;
+}
+
+// foo
+@col4d: #4D4D4D;
+@w100: 100%;
+#r-foo {
+    width: @w100;
+    height: @h30 * 2 + 2;
+    background: @col4d;
+    padding: @fs12 + 3;
+}
+
+@w340: 340px;
+@mauto: auto;
+#r-foo .r-fo {
+    width: @w340;
+    height: @fs20 + 5;
+    margin: @mauto;
+}
+
+#r-foo .r-fo a {
+    color: @coldb;
+    font-size: @fs12 + 2;
+    margin-left: @fs12;
+    text-decoration: @td;
+}
+
+#r-foo .r-fo a:hover {
+    color: @col;
+}
+
+@coldb: #DBDBDB;
+@block: block;
+#r-foo p {
+    // display: @block;
+    text-align: @ta;
+    color: @coldb;
+    font-size: @fs12;
+    // margin-top: @fs20 * 2;
+}
+
+@style: normal;
+#r-foo p em {
+    font-style: @style;
+}

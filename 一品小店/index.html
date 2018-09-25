@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav id="app">
+        <div class="X-header" v-for="div in logo">
+            <a href="index.html">
+                {{ div.yp }}
+            </a>
+            <input :type=" div.tp " :placeholder=" div.pc " :class=" div.fst ">
+            <input :type=" div.btn " :value=" div.ss " :class=" div.two ">
+        </div>
+        <div class="X-nav" v-for="div in oL">
+            <div class="nav_2">
+                <div class="assort">
+                    <h1>
+                        {{ div.frist }}
+                    </h1>
+                </div>
+                <div class="nav_1">
+                    <ul>
+                        <li v-for="li in list">
+                            <a :href=" li.htm ">
+                                {{ li.txt }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_banner">
+            <div class="banner_left fl">
+                <ul>
+                    <li v-for="li in sPlist">
+                        <a href="javascript:;">
+                            <img :src=" li.src " alt=""> {{ li.txt }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_right fl">
+                <a href="javascript:;" v-for="a in img">
+                    <img :src=" a.pic " alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+        <div class="lfood" v-for="div in ma">
+            <div class="X_main">
+                <h1>
+                    {{ div.h1T }}
+                </h1>
+                <div class="food-con">
+                    <div class="food-lf">
+                        <img :src=" div.src " alt="">
+                    </div>
+                    <div class="food-rt">
+                        <ul class="ff-rT">
+                            <li v-for="li in rList">
+                                <a href="javascript:;">
+                                    <img :src=" li.src " alt="">
+                                </a>
+                                <div class="cmqkl">
+                                    <a href="javascript:;" :class=" li.qkl ">
+                                        {{ li.txt }}
+                                    </a>
+                                    <p>
+                                        {{ li.pTit }}
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="ff-rB">
+                            <li v-for="li in L" :class=" li.csl ">
+                                <a href="javascript:;">
+                                    <img :src=" li.tP " alt="">
+                                </a>
+                                <p>
+                                    {{ li.txt }}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lS">
+            <div class="X-snack">
+                <p>
+                    休闲零食
+                </p>
+            </div>
+        </div>
+        <div class="X-ls-main">
+            <div class="X-ls-main-lf fL">
+                <p v-for="p in two">
+                    {{ p.bq }}
+                </p>
+            </div>
+            <ol>
+                <li v-for="li in lst">
+                    <a href="javascript:;">
+                        {{ li.adr }}
+                    </a>
+                </li>
+            </ol>
+            <p v-for="p in lis">
+                <img :src=" p.tPic " alt="">
+            </p>
+            <div class="X-ls-main-rt fl">
+                <div class="X-ls-rt">
+                    <ul>
+                        <li v-for="li in Pic">
+                            <a href="javascript:;" style="background: none;">
+                                <img :src=" li.Tp " alt="">
+                            </a>
+                            <div class="X-Transparent"></div>
+                            <div class="X-box">
+                                <p>
+                                    {{ li.tXt }}
+                                </p>
+                                <p>
+                                    市场价：{{ li.scj }}
+                                </p>
+                                <p>
+                                    价格：{{ li.jg }}
+                                </p>
+                                <p>
+                                    <a href="javascript:;">
+                                        {{ li.gm }}
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="X-ls-rb">
+                    <ul>
+                        <li v-for="li in ls4">
+                            <a href="javascript:;" style="background: none;">
+                                <img :src=" li.Tp " alt="">
+                            </a>
+                            <div class="X-Transparent"></div>
+                            <div class="X-box">
+                                <p>
+                                    {{ li.tXt }}
+                                </p>
+                                <p>
+                                    市场价：{{ li.scj }}
+                                </p>
+                                <p>
+                                    价格：{{ li.jg }}
+                                </p>
+                                <p>
+                                    <a href="javascript:;">
+                                        {{ li.gm }}
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="x-img2" v-for="div in lis1pic">
+            <img :src=" div.hf " alt="">
+        </div>
+        <div class="L_jkls">
+            <h1 class="L_jk" v-for="h1 in tittxt">
+                {{ h1.title }}
+            </h1>
+            <div class="L_jklist">
+                <ul>
+                    <li v-for="li in jklslist">
+                        <a href="javascript:;">
+                            <div>
+                                <img :src=" li.jkpic " alt="">
+                            </div>
+                        </a>
+                        <p class="L_pinming">
+                            <a href="javascript:;">
+                                {{ li.jktit }}
+                            </a>
+                        </p>
+                        <p>
+                            价格：
+                            <span>
+                                {{ li.jkjg }}
+                            </span>
+                        </p>
+                        <p class="goumai">
+                            <a href="javascript:;">
+                                {{ li.jkgm }}
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="r-footer">
+        <div class="r-foot">
+            <ul v-for="ul in lt6">
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis1 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis2 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis3 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis4 }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="r-foo">
+        <div class="r-fo">
+            <a href="javascript:;">
+                首页
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                零食
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                美酒
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                当地特色
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                留言板
+            </a>
+        </div>
+        <p>
+            ©2015 网站样板-食品饮料 版权所有
+        </p>
+        <p>
+            技术支持：凡科建站
+            <em>
+                |
+            </em> 手机版
+        </p>
+    </div>
+    <script src="https://wuxiongda.top/vue/js/vue.js"></script>
+    <script src="js/vue.js"></script>
+    <!-- <script src="https://wuxiongda.top/js/jquery-1.11.3.min.js"></script> -->
+    <!-- <script src="https://wuxiongda.top/js/underscore-min.js"></script> -->
+    <script>
+        // $.ajax({
+        //     url: "data/data.json",
+        //     type: "get",
+        //     dataType: "json",
+        //     success: function(data) {
+        //         // console.log(data);
+        //         var obj = typeof data == 'object' ? data : eval('(' + data + ')');
+        //         // console.log(obj);
+        //         var dataobj = obj.data;
+        //         _.each(data, function(data) {
+        //             console.log(data);
+        //         });
+        //     }
+        // });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <ul>
+            <li v-for="li in Pic3">
+                <a href="javascript:;">
+                    <img :src=" li.Tp3 " alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://wuxiongda.top/vue/js/vue.js"></script>
+    <script>
+        // let vc = new Vue({
+        //     el: '#main',
+        //     data: {
+        //         ls: [{
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }, {
+        //             "adr": "日本"
+        //         }]
+        //     }
+        // });
+
+        let v = new Vue({
+            el: "#main",
+            data: {
+                Pic3: [{
+                    "Tp3": "images/shou-xiu-02.jpg"
+                }, {
+                    "Tp3": "images/shou-xiu-03.jpg"
+                }, {
+                    "Tp3": "images/shou-xiu-04.jpg"
+                }]
+            }
+        })
+    </script>
+</body>
+
+</html>

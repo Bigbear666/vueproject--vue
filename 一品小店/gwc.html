@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gwc.css">
+</head>
+
+<body>
+    <nav id="app">
+        <div class="X-header" v-for="div in logo">
+            <a href="index.html">
+                {{ div.yp }}
+            </a>
+            <input :type=" div.tp " :placeholder=" div.pc " :class=" div.fst ">
+            <input :type=" div.btn " :value=" div.ss " :class=" div.two ">
+        </div>
+        <div class="X-nav" v-for="div in oL">
+            <div class="nav_2">
+                <div class="assort">
+                    <h1>
+                        {{ div.frist }}
+                    </h1>
+                </div>
+                <div class="nav_1">
+                    <ul>
+                        <li v-for="li in list">
+                            <a href=" li.src ">
+                                {{ li.txt }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_banner">
+            <div class="banner_left fl">
+                <ul>
+                    <li v-for="li in sPlist">
+                        <a href="javascript:;">
+                            <img :src=" li.src " alt=""> {{ li.txt }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_right fl">
+                <a href="javascript:;" v-for="a in img">
+                    <img :src=" a.pic " alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="gwc">
+        <div class="gwc" v-for="div in list">
+            <h1>
+                {{ div.gwctit }}
+            </h1>
+        </div>
+    </div>
+    <div id="r-name">
+        <div class="shoppingTrolley_goods">
+            <table>
+                <tbody>
+                    <tr class="shoppingTrolley_header">
+                        <th class="shoppingTrolley_name">名称</th>
+                        <th class="shoppingTrolley_thePrice">价格</th>
+                        <th class="shoppingTrolley_thePrice">数量</th>
+                        <th class="shoppingTrolley_thePrice">小计</th>
+                        <th class="shoppingTrolley_thePrice">操作</th>
+                    </tr>
+                    <tr class="shoppingTrolley_form">
+                        <td>
+                            <input type="checkbox" name="" id="" value="">
+                            <a href="product.html" class="shoppingTrolley_a">德式黄油奶油颗粒糖果</a>
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            <a href="" class="shoppingTrolley_a">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="shoppingTrolley_form">
+                        <td>
+                            <input type="checkbox" name="" id="" value="">
+                            <a href="product.html" class="shoppingTrolley_a">布尔本德式黄油奶油曲奇饼</a>
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            ￥0.00
+                        </td>
+                        <td>
+                            <a href="" class="shoppingTrolley_a">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <label for="">
+            <input type="checkbox" name="" id="" value="">
+            <span>全选</span>
+        </label>
+        <div class="shoppingTrolley_amount">
+            <span class="shoppingTrolley_zong">总计:￥0.00</span>
+            <span class="shoppingTrolley_zong">已节省:￥0.00</span>
+            <div class="shoppingTrolley_kuan">
+                <span class="shoppingTrolley_fu">应支付金额:</span>
+                <span class="shoppingTrolley_qian">￥0.00</span>
+            </div>
+            <a href="" class="r-jxgou">继续购物</a>
+            <input type="button" id="suan" value="结算订单">
+        </div>
+    </div>
+    <div id="r-footer">
+        <div class="r-foot">
+            <ul v-for="ul in lt6">
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis1 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis2 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis3 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis4 }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="r-foo">
+        <div class="r-fo">
+            <a href="javascript:;">
+                首页
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                零食
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                美酒
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                当地特色
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                留言板
+            </a>
+        </div>
+        <p>
+            ©2015 网站样板-食品饮料 版权所有
+        </p>
+        <p>
+            技术支持：凡科建站
+            <em>
+                |
+            </em> 手机版
+        </p>
+    </div>
+    <script src="https://wuxiongda.top/vue/js/vue.js"></script>
+    <script src="js/vue3.js"></script>
+</body>
+
+</html>

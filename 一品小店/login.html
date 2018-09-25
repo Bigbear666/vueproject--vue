@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <nav id="app">
+        <div class="X-header" v-for="div in logo">
+            <a href="index.html">
+                {{ div.yp }}
+            </a>
+            <input :type=" div.tp " :placeholder=" div.pc " :class=" div.fst ">
+            <input :type=" div.btn " :value=" div.ss " :class=" div.two ">
+        </div>
+        <div class="X-nav" v-for="div in oL">
+            <div class="nav_2">
+                <div class="assort">
+                    <h1>
+                        {{ div.frist }}
+                    </h1>
+                </div>
+                <div class="nav_1">
+                    <ul>
+                        <li v-for="li in list">
+                            <a href=" li.src ">
+                                {{ li.txt }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_banner">
+            <div class="banner_left fl">
+                <ul>
+                    <li v-for="li in sPlist">
+                        <a href="javascript:;">
+                            <img :src=" li.src " alt=""> {{ li.txt }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_right fl">
+                <a href="javascript:;" v-for="a in img">
+                    <img :src=" a.pic " alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="login">
+        <div id="r-login">
+            <div class="r-vip">
+                <h2>会员登录</h2>
+            </div>
+            <div class="r-login">
+                <input type="text" name="r-input1" id="r-input1" placeholder="账号">
+                <input type="text" name="r-input2" id="r-input2" placeholder="密码">
+                <input type="button" name="r-input3" id="r-input3" value="登录">
+                <a href="zhuce.html">免费注册&gt;</a>
+            </div>
+        </div>
+    </div>
+    <div id="r-footer">
+        <div class="r-foot">
+            <ul v-for="ul in lt6">
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis1 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis2 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis3 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis4 }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="r-foo">
+        <div class="r-fo">
+            <a href="javascript:;">
+                首页
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                零食
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                美酒
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                当地特色
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                留言板
+            </a>
+        </div>
+        <p>
+            ©2015 网站样板-食品饮料 版权所有
+        </p>
+        <p>
+            技术支持：凡科建站
+            <em>
+                |
+            </em> 手机版
+        </p>
+    </div>
+    <script src="https://wuxiongda.top/vue/js/vue.js"></script>
+    <script src="js/vue4.js"></script>
+</body>
+
+</html>

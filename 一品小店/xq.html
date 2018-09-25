@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/xq.css">
+</head>
+
+<body>
+    <nav id="app">
+        <div class="X-header" v-for="div in logo">
+            <a href="index.html">
+                {{ div.yp }}
+            </a>
+            <input :type=" div.tp " :placeholder=" div.pc " :class=" div.fst ">
+            <input :type=" div.btn " :value=" div.ss " :class=" div.two ">
+        </div>
+        <div class="X-nav" v-for="div in oL">
+            <div class="nav_2">
+                <div class="assort">
+                    <h1>
+                        {{ div.frist }}
+                    </h1>
+                </div>
+                <div class="nav_1">
+                    <ul>
+                        <li v-for="li in list">
+                            <a href=" li.src ">
+                                {{ li.txt }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_banner">
+            <div class="banner_left fl">
+                <ul>
+                    <li v-for="li in sPlist">
+                        <a href="javascript:;">
+                            <img :src=" li.src " alt=""> {{ li.txt }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_right fl">
+                <a href="javascript:;" v-for="a in img">
+                    <img :src=" a.pic " alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="r-chanpin">
+            <div class="r-chanpin">
+                <h2>产品详情</h2>
+            </div>
+            <div class="r-bake-cookie">
+                <div class="r-bake">
+                    <div class="r-bake-img">
+                        <img src="images/shou-jin-01.jpg">
+                    </div>
+                    <img src="images/shou-xiang-01.jpg">
+                </div>
+                <div class="r-cokkie">
+                    <div class="r-cokkie-top">
+                        <h1>bake cookie烤制浓厚巧克力</h1>
+                    </div>
+                    <p class="r-cokkie-p1">市场价 ： <s> ￥0.00</s></p>
+                    <p class="r-cokkie-p1"> 价 格 ： <span class="r-p1-span1"> ￥15.00</span></p>
+                    <p class="r-cokkie-p1">购买数量 ：
+                        <span class="r-p1-span2">-</span>
+                        <input type="text" name="" id="r-p1-input" value="1">
+                        <span class="r-p1-span3">+</span>
+                    </p>
+                    <p class="r-cokkie-a">
+                        <span class="r-cokkie-a1">加入购物车</span>
+                        <a href="" class="r-cokkie-a2"><img src="images/shoppingcar.jpg">立即购买</a>
+                    </p>
+                    <p class="r-cokkie-foot">上一个<span>下一个</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="r-footer">
+        <div class="r-foot">
+            <ul v-for="ul in lt6">
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis1 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis2 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis3 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        {{ ul.lis4 }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="r-foo">
+        <div class="r-fo">
+            <a href="javascript:;">
+                首页
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                零食
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                美酒
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                当地特色
+            </a>
+            <a href="javascript:;">
+                |
+            </a>
+            <a href="javascript:;">
+                留言板
+            </a>
+        </div>
+        <p>
+            ©2015 网站样板-食品饮料 版权所有
+        </p>
+        <p>
+            技术支持：凡科建站
+            <em>
+                |
+            </em> 手机版
+        </p>
+    </div>
+    <script src="https://wuxiongda.top/vue/js/vue.js"></script>
+    <script src="js/vue2.js"></script>
+</body>
+
+</html>
